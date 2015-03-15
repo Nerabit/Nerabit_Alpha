@@ -1,0 +1,979 @@
+*::selection {
+	background: rgba(150, 150, 150, 0.3);	
+}
+
+*::-moz-selection {
+	background: rgba(150, 150, 150, 0.3);	
+}
+
+*::-webkit-selection {
+	background: rgba(150, 150, 150, 0.3);	
+}
+
+@font-face 
+{
+	font-family: 'Lato-Regular';
+	src: url('/fonts/Lato/Lato-Regular.ttf');
+}
+@font-face 
+{
+	font-family: 'Lato-Light';
+	src: url('/fonts/Lato/Lato-Light.ttf');
+}
+
+h1
+{
+	font-family: 'Lato-Light';
+	font-weight: normal;
+	color: rgb(100, 100, 100);
+	font-size: 2em;
+	margin: 0;
+}
+h2
+{
+	font-family: 'Lato-Light';
+	font-weight: normal;
+	color: rgb(100, 100, 100);
+	margin: 0;
+}
+h3
+{
+	font-family: 'Lato-Regular';
+	font-weight: normal;
+	color: rgb(100, 100, 100);
+	margin: 0;
+	font-size: 1.1em;
+}
+p
+{
+	font-family: 'Lato-Light';
+	font-weight: normal;
+	color: rgb(100, 100, 100);
+	margin: 0;
+}
+
+html
+{
+
+}
+
+body
+{
+	margin: 0px;
+	background: rgba(20, 20, 20, 1)
+}
+
+header
+{
+	width: 100%;
+	position: fixed;
+	font-family: 'Lato-Light';
+	padding: 0;
+	margin: 0;
+}
+header nav ul
+{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+header nav ul#left
+{
+	margin-left: 2%;
+	float: left;
+	z-index: 4;
+}
+header nav ul#left li
+{
+	line-height: 77px;
+}
+header nav ul#left img
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+header nav ul#left h1
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+header nav ul#right
+{
+	margin-right: 4%;
+	float: right;
+	width: 50%;
+	text-align: right;
+	position: relative;
+	z-index: 5;
+}
+header nav ul#right li
+{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+	width: 100px;
+	text-align: center;
+	line-height: 77px;
+	cursor: pointer;
+}
+header nav ul#right li h2
+{
+	color: rgb(120, 120, 120);
+}
+header nav ul li
+{
+	height: 77px;
+}
+header nav ul li a
+{
+	text-decoration: none;
+}
+
+header nav ul#right li#submit
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+header nav ul#right #profil
+{
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 200px;
+	max-width: 250px;
+}
+header nav ul#right #profil h2
+{
+	color: rgb(211, 60, 44);
+	font-size: 1.2em;
+}
+header nav ul#right #profil #username
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+header nav ul#right #profil #username a
+{
+	text-decoration: none;
+}
+header nav ul#right #profil #avatar
+{
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 100px;
+	margin-left: 2%;
+	width: 50px;
+	height: 50px;
+}
+header nav ul#right #profil #avatar img
+{
+	border-radius: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border: 2px solid rgb(211, 60, 44);
+}
+
+
+
+#banner
+{
+	width: 100%;
+	height: 250px;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+}
+
+/*-----OPTIONBAR-----*/
+#option-bar
+{
+	background-color: rgb(30, 30, 30);
+	height: 55px;
+	line-height: 50px;
+	padding-left: 4%;
+	padding-right: 4%;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 5;
+}
+#option-bar #searchbar-container
+{
+	width: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+#option-bar #searchbar-container input
+{
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 3px 0px 0px 3px;
+}
+#option-bar #searchbar-container .input-icon
+{
+	margin-left: -4px;
+	border-radius: 0px 3px 3px 0px;
+}
+
+#searchoption-container
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+	text-align: right;
+}
+#searchoption-container #title
+{
+	vertical-align: middle;
+	display: inline-block;
+	padding-right: 1%;
+}
+#searchoption-container #title p
+{
+	color: rgb(160, 160, 160);
+}
+#searchoption-container .select
+{
+	vertical-align: middle;
+	display: inline-block;
+	width: 200px;
+}
+
+/*-----SECTION-----*/
+section
+{
+	padding-left: 4%;
+	padding-right: 4%;
+	overflow: hidden;
+}
+
+/*-----ADDS-----*/
+#container
+{
+	margin-left: -5px;
+	margin-top: 1%;
+}
+
+.ad-container
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	height: 340px;
+	margin-left: -2px;
+	margin-right: -4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.ad
+{
+	background-color: rgb(30, 30, 30);
+	margin-bottom: 1%;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px 2px rgba(30, 30, 30, 0.1);
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+.ad h2
+{
+	color: rgb(160, 160, 160);
+}
+.ad p
+{
+	color: rgb(160, 160, 160);
+}
+.ad .categorie
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 10px;
+	padding-left: 10px;
+	z-index: 2;
+}
+.ad .img-container
+{
+	overflow: hidden;
+	position: relative;
+	height: 285px;
+	text-align: center;
+}
+.ad .img-container img
+{
+	height: 100%;
+	margin-left: -50%;
+	margin-right: -50%;
+}
+.ad .img-container .align-middle
+{
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.ad .hover-img
+{
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 285px;
+	text-align: center;
+	background-color: rgba(30, 30, 30, 0.8);
+	padding-top: 13%;
+	box-sizing: border-box;
+}
+
+.ad .hover-img .profil
+{
+	margin-bottom: 2%;
+}
+.ad .hover-img .profil .avatar
+{
+	height: 45px;
+	width: 45px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 100px;
+}
+.ad .hover-img .profil .avatar img
+{
+	border-radius: 100px;
+	height: 45px;
+	width: 45px;
+}
+.ad .hover-img .profil .name
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ad .hover-img .state
+{
+	margin-bottom: 1%;
+	font-size: 1.1em;
+}
+.ad .hover-img .state .location
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+.ad .hover-img .state .state-icon
+{
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 3px;
+	margin-left: 1%;
+}
+.ad .hover-img .state .state-icon img
+{
+	border-radius: 2px;
+}
+
+.ad .hover-img .prices
+{
+	font-size: 1.2em;
+}
+.ad .hover-img .prices div
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.ad .hover-img .rating
+{
+	padding-top: 5%;
+	font-size: 1.3em;
+}
+.ad .hover-img .rating .rateup
+{
+	height: 30px;
+	width: 30px;
+	background: url('../img/rateup.png') no-repeat right;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 25px;
+	line-height: 30px;
+}
+.ad .hover-img .rating .ratedown
+{
+	height: 30px;
+	background: url('../img/ratedown.png') no-repeat right;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 25px;
+	line-height: 30px;
+}
+
+.ad .infos
+{
+	height: 50px;
+	padding-left: 2%;
+	padding-right: 2%;
+	line-height: 50px;
+}
+.ad .infos .title
+{
+	float: left;
+}
+.ad .infos .price
+{
+	float: right;
+	background: url('../img/bitcoin.png') right no-repeat;
+	padding-right: 30px;
+}
+
+/*-----FOOTER-----*/
+footer
+{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+footer h2
+{
+	color: rgb(200, 200, 200);
+}
+
+#backgroundBlur
+{
+	background: rgba(50, 50, 50, 0.8);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	cursor: pointer;
+	display: none;
+	z-index: 4;
+}
+
+.box
+{
+	background-color: rgb(30, 30, 30);
+	width: 300px;
+	background-position: center;
+	border-bottom: 3px solid rgb(211, 60, 44);
+	padding-right: 2%;
+	padding-left: 2%;
+	padding-top: 25px;
+	box-sizing: border-box;
+	border-radius: 2px 2px 0px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	left: 50%;
+	top: 50%;
+	display: none;
+	z-index: 5;
+}
+
+/*-----SIGNINBOX-----*/
+#signInBox
+{
+	margin: -175px 0 0 -150px;
+}
+#signInBox .cross
+{
+	height: 17px;
+	width: 17px;
+	background: url('/img/cross.png');
+	position: absolute;
+	right: 7%;
+	top: 25px;
+	cursor: pointer;
+}
+#signInBox #title
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#signInBox input[type=text], #signInBox input[type=password]
+{
+	width: 100%;
+	position: relative;
+	line-height: 1;
+	padding-left: 3%;
+	background-color: white;
+	font-size: 1em;
+	font-family: "Lato-Regular"
+}
+#signInBox ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin-bottom: 7%;
+}
+#signInBox ul h3
+{
+	text-align: left;
+	margin-bottom: 7px;
+}
+#signInBox li
+{
+	display: inline-block;
+	vertical-align: middle;
+}
+#signInBox #submit
+{
+
+}
+#signInBox #forgot
+{
+	margin-top: 1%;
+}
+#signInBox #forgot a
+{
+	text-decoration: none;
+}
+
+#signInBox .error-message
+{
+	border-radius: 3px;
+	background: rgba(211, 60, 44, 0.5);
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 2%;
+	display: none;
+}
+#signInBox .error-message p
+{
+	color: rgba(211, 60, 44, 1);
+}
+
+
+/*-----SIGNUPBOX-----*/
+#signUpBox
+{
+	margin: -250px 0 0 -250px;
+	width: 500px;
+
+	padding-bottom: 20px;
+}
+#signUpBox .cross
+{
+	height: 17px;
+	width: 17px;
+	background: url('/img/cross.png');
+	position: absolute;
+	right: 7%;
+	top: 25px;
+	cursor: pointer;
+}
+#signUpBox #title
+{
+	text-align: center;
+	padding-bottom: 20px;
+}
+#signUpBox #register
+{
+	
+}
+#signUpBox #register ul
+{
+	list-style-type: none;
+	margin: 0;
+	box-sizing: border-box;
+}
+#signUpBox #register ul#left
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding-left: 5px;
+	padding-right: 7px;
+	padding-top: 0.5%;
+}
+#signUpBox #register ul#right
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-left: -4px;
+	padding-left: 7px;
+	padding-right: 5px;
+	padding-top: 0.5%;
+}
+#signUpBox #register ul#submit
+{
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	padding-top: 2%;
+}
+#signUpBox #register ul li
+{
+	margin-bottom: 5%;
+}
+#signUpBox #register ul li h3
+{
+	margin-bottom: 7px;
+}
+#signUpBox #register ul li input
+{
+	width: 100%;
+}
+
+#signUpBox #register ul li .select
+{
+	box-sizing: border-box;
+}
+
+/*-----POSTADBOX-----*/
+#postAdBox
+{
+	margin: -320px 0 0 -250px;
+	width: 500px;
+
+	padding-bottom: 20px;
+}
+#postAdBox .cross
+{
+	height: 17px;
+	width: 17px;
+	background: url('/img/cross.png');
+	position: absolute;
+	right: 7%;
+	top: 25px;
+	cursor: pointer;
+}
+#postAdBox #title
+{
+	text-align: center;
+	padding-bottom: 20px;
+}
+#postAdBox #ad
+{
+	
+}
+#postAdBox #ad ul
+{
+	list-style-type: none;
+	margin: 0;
+	box-sizing: border-box;
+}
+#postAdBox #ad ul#top
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	padding-top: 0.5%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#postAdBox #ad ul#left
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding-left: 5px;
+	padding-right: 7px;
+}
+#postAdBox #ad ul#right
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	margin-left: -4px;
+	padding-left: 7px;
+	padding-right: 5px;
+}
+#postAdBox #ad ul#bottom
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	padding-top: 0.5%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#postAdBox #ad ul#bottom ul#left
+{
+	padding-left: 0;
+	padding-right: 5px;
+}
+#postAdBox #ad ul#bottom ul#right
+{
+	padding-left: 5px;
+	padding-right: 0;
+}
+#postAdBox #ad ul#bottom input[type="file"]
+{
+	display: none;
+}
+#postAdBox #ad ul#bottom .submit
+{
+	margin-bottom: 2%;
+}
+
+#postAdBox #ad ul#submit
+{
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	padding-top: 0;
+}
+#postAdBox #ad ul li
+{
+	margin-bottom: 5%;
+}
+#postAdBox #ad ul li h3
+{
+	margin-bottom: 7px;
+}
+#postAdBox #ad ul li input
+{
+	width: 100%;
+}
+
+#postAdBox #ad ul li .select
+{
+	box-sizing: border-box;
+}
+#postAdBox #ad ul li textarea
+{
+	min-height: 130px;
+	resize: none;
+}
+
+
+/*-----INPUT-----*/
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, select:focus, .select:active, textarea:focus
+{
+	box-shadow: 0px 0px 0px 1px rgb(211, 60, 44);
+}
+textarea
+{
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: 0;
+	font-family: 'Lato-Regular';
+	-webkit-appearance: none;
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	outline: none;
+	background: rgb(230, 230, 230);
+}
+.select
+{
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Lato-Regular';
+	-webkit-appearance: none;
+	background-color: rgb(230, 230, 230);
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	text-align: left;
+	padding-right: 20px;
+}
+.select input
+{
+	display: none;
+}
+.select .icon
+{
+	background-image: url('../img/roll.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.select .value
+{
+	line-height: 40px;
+	height: 40px;
+	width: 100%;
+	padding-left: 10px;
+}
+.select .ul
+{
+	background-color: rgb(230, 230, 230);
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	border-radius: 0px 0px 3px 3px;
+	display: none;
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	max-height: 200px;
+	z-index: 2;
+}
+.select .ul .li
+{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	margin-bottom: 0;
+	text-align: left;
+}
+.select .ul .li:hover
+{
+	background-color: rgb(200, 200, 200);
+}
+
+.submit
+{
+	background: rgba(100, 100, 100, 0);
+	border: 1px solid rgb(211, 60, 44);
+	border-radius: 4px;
+	min-width: 100px;
+	height: 40px;
+	margin: auto;
+	line-height: 40px;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+.submit p
+{
+	color: rgb(211, 60, 44);
+	font-family: 'Lato-Regular';
+	font-size: 0.9em;
+}
+.submit:hover
+{
+	cursor: pointer;
+}
+.submit:disabled
+{
+	background-color: rgba(211, 60, 44, 0.2);
+	border: 1px solid rgba(211, 60, 44, 0.2);
+	color: rgba(100, 100, 100, 0.5);
+	cursor: pointer;
+}
+
+input[type=text]
+{
+	height: 40px;
+	width: 150px;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: 0;
+	font-family: 'Lato-Regular';
+	-webkit-appearance: none;
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	outline: none;
+	background: rgb(230, 230, 230);
+}
+input[type=password]
+{
+	height: 40px;
+	width: 150px;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: 0;
+	font-family: 'Lato-Regular';
+	-webkit-appearance: none;
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	outline: none;
+	background: rgb(230, 230, 230);
+}
+input[type=image]
+{
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	border: 0;
+	outline: none;
+}
+input[type=email]
+{
+	height: 40px;
+	width: 150px;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: 0;
+	font-family: 'Lato-Regular';
+	-webkit-appearance: none;
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	outline: none;
+	background: rgb(230, 230, 230);
+}
+input[type=submit]
+{
+	background: rgba(100, 100, 100, 0);
+	border: 1px solid rgb(211, 60, 44);
+	border-radius: 4px;
+	font-family: 'Lato-Regular';
+	color: rgb(211, 60, 44);
+	width: 100px;
+	height: 40px;
+	margin: auto;
+}
+input[type=submit]:hover
+{
+	cursor: pointer;
+}
+input[type=submit]:disabled
+{
+	background-color: rgba(211, 60, 44, 0.2);
+	border: 1px solid rgba(211, 60, 44, 0.2);
+	color: rgba(100, 100, 100, 0.5);
+	cursor: pointer;
+}
+
+select
+{
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	box-sizing: border-box;
+	border: 0;
+	font-family: 'Lato-Regular';
+	-webkit-appearance: none;
+	background-image: url('../img/roll-backcolor.png');
+	background-position: 150px;
+	background-repeat: no-repeat;
+	color: rgb(100, 100, 100);
+	border-radius: 3px;
+	outline: none;
+}
